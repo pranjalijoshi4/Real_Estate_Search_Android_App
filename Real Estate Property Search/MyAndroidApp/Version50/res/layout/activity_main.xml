@@ -1,0 +1,179 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="580dp"
+    tools:context="com.example.propertysearchzillow.MainActivity" >
+ <ScrollView
+      android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+  <ImageView
+      android:id="@+id/imageView1"
+      android:layout_width="match_parent"
+      android:layout_height="580dp"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentTop="true"
+      android:scaleType="fitXY"
+      android:src="@drawable/img" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="580dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5pt"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        android:paddingLeft="7pt" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0pt"
+            android:text="Search Your Property Here"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000"
+            android:textSize="12pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="15pt"
+            android:layout_marginTop="4pt"
+            android:text="Address*:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:textSize="10pt" />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="18pt"
+            android:layout_marginLeft="3pt"
+            android:layout_marginRight="10pt"
+            android:background="@drawable/rounded_corners"
+            android:ems="10"
+            android:hint="Street Address" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/address_error"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="0pt"
+            android:textColor="#FF0000"
+            android:textSize="7pt" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="City*:"
+             android:layout_marginTop="0pt"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:textSize="10pt" />
+
+        <EditText
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="18pt"
+            android:layout_marginLeft="3pt"
+            android:layout_marginRight="10pt"
+            android:background="@drawable/rounded_corners"
+            android:ems="10"
+            android:hint="City" />
+
+        <TextView
+            android:id="@+id/city_error"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="0pt"
+            android:layout_weight="0."
+            android:textColor="#FF0000"
+            android:textSize="7pt" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="State*:"
+            android:layout_marginTop="0pt"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:textSize="10pt" />
+
+        <Spinner
+            android:id="@+id/state"
+            android:layout_width="fill_parent"
+            android:layout_height="18pt"
+            android:layout_marginLeft="3pt"
+            android:layout_marginRight="10pt"
+            android:background="@drawable/rounded_corners"
+            android:entries="@array/state_array" />
+
+        <TextView
+            android:id="@+id/state_error"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="0pt"
+            android:layout_weight="0."
+            android:textColor="#FF0000"
+            android:textSize="7pt" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5pt"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="2pt"
+                android:background="#d3d3d3"
+                android:text="Search" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="50pt"
+                android:layout_marginRight="13pt"
+                android:layout_weight="0.34"
+                android:src="@drawable/zimg" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1pt"
+            android:layout_marginTop="7pt"
+            android:background="#000000"
+            android:orientation="vertical"
+            android:layout_marginLeft="3pt"
+            android:layout_marginRight="10pt">
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/invalid_url_error"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5pt"
+            android:layout_marginRight="15pt"
+            android:layout_marginTop="0pt"
+            android:textColor="#000000"
+            
+            android:textSize="10pt" />
+
+    </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>
